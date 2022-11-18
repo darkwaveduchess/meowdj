@@ -1,16 +1,12 @@
+//🔊 SOUNDS
+var meow = new Audio("./assets/audios/meow.wav");
+var meoww = new Audio("./assets/audios/laught.mp3");
+var meowww = new Audio("./assets/audios/killbill.mp3");
+var meowwww = new Audio("./assets/audios/Reggae_Horn.mp3");
 
 document.addEventListener('keydown', function (event) {
 
     console.log(event.keyCode);
-
-    //🔊 SOUNDS
-    var meow = new Audio("./assets/audios/meow.wav");
-
-    var meoww = new Audio("./assets/audios/laught.mp3");
-
-    var meowww = new Audio("./assets/audios/killbill.mp3");
-
-    var meowwww = new Audio("./assets/audios/Reggae_Horn.mp3");
 
     //⌨️ KEY EVENTS
     switch (event.keyCode) {

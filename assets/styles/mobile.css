@@ -1,0 +1,16 @@
+@media (max-width: 480px) {
+    #catbody {
+        width: 70%;
+    }
+
+    #catvibing {
+        width: 50%;
+        top: 0;
+    }
+
+    #table{
+        width: 70%;
+        top: 35%;
+        left: 15%;
+    }
+}
