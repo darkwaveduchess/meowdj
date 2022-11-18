@@ -19,15 +19,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../imgs/DJ.PNG);
+    background-image: url(../imgs/Captura\ de\ Tela\ \(86\).png);
     background-size: cover;
     background-position: center;
-}
-
-
-#catbody {
-    width: 20%;
-    z-index: 1000;
 }
 
 /* The animation code */
@@ -47,48 +41,42 @@ body {
     }
 }
 
-@keyframes catglasses {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 #catvibing {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 15%;
+    top: 50%;
+    left:0;
+    width: 10%;
     animation-name: catvibing;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
 }
 
-#glass{
+#catpiano {
+    position: absolute;
+    right:0;
+    top:0;
+    width: 15%;
+}
+
+button {
     z-index: 1001;
     position: absolute;
-    top: 31%;
-    left: 40.5%;
-    width: 12%;
-    opacity: 0;
-    transform: scaleX(-1) rotate(-20deg);
-    animation-name: catglasses;
-    animation-delay: 3s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    top: 5%;
+    width: 10%;
+    height: 6%;
+    background-color: rgb(230, 230, 230);
+    font-family:cursive;
+    border-radius: 10px;
 
 }
+
+
 
 #table {
     position: absolute;
     z-index: 1001;
     width: 35%;
-    top: 52%;
-    left: 30%
+    top: 21%;
+    left: 25%;
+    transform: scaleX(-1) rotate(-10deg);
 
 
 }
