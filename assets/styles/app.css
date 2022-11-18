@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    /* outline: 1px solid red; */
+    outline-offset: -2px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;;
+}
+
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imgs/DJ.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#catbody {
+    width: 20%;
+    z-index: 1000;
+}
+
+/* The animation code */
+@keyframes catvibing {
+    from {
+        top: 0;
+        transform: rotate(0);
+    }
+    50%{
+        left: calc(100% - 207px);
+    }
+
+    to {
+        top: calc(100% - 207px);
+        
+        transform: rotate(580deg);
+    }
+}
+
+@keyframes catglasses {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#catvibing {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    animation-name: catvibing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+#glass{
+    z-index: 1001;
+    position: absolute;
+    top: 31%;
+    left: 40.5%;
+    width: 12%;
+    opacity: 0;
+    transform: scaleX(-1) rotate(-20deg);
+    animation-name: catglasses;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+#table {
+    position: absolute;
+    z-index: 1001;
+    width: 35%;
+    top: 52%;
+    left: 30%
+
+
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    #catbody {
+        width: 70%;
+    }
+
+    #catvibing {
+        width: 50%;
+        top: 0;
+    }
+}
