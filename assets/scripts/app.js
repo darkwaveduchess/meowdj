@@ -1,8 +1,8 @@
 //🔊 SOUNDS
 var meow = new Audio("./assets/audios/meow.wav");
-var meoww = new Audio("./assets/audios/laught.mp3");
-var meowww = new Audio("./assets/audios/killbill.mp3");
-var meowwww = new Audio("./assets/audios/Reggae_Horn.mp3");
+var laught = new Audio("./assets/audios/laught.mp3");
+var killbill = new Audio("./assets/audios/killbill.mp3");
+var Reggae_Horn = new Audio("./assets/audios/Reggae_Horn.mp3");
 
 document.addEventListener('keydown', function (event) {
 
@@ -14,14 +14,19 @@ document.addEventListener('keydown', function (event) {
             meow.play();
             break;
         case 65:
-            meoww.play();
+            laught.play();
             break;
         case 66:
-            meowww.play();
+            killbill.play();
             break;
         case 67:
-            meowwww.play();
+            Reggae_Horn.play();
             break;
     }
-   
+
+    if ([32, 65, 66, 67].indexOf(event.keyCode) > -1) {
+        catvibing.style.opacity = "1";
+        catpiano.style.opacity = "1";
+    }
+
 })
